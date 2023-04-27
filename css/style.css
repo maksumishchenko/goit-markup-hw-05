@@ -289,6 +289,9 @@ body {
   margin-left: auto;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+  background: var(--color-cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-icon {
 }
