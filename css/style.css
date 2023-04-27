@@ -619,7 +619,7 @@ body {
   height: 300px;
   padding: 15px;
   background-color: var(--color-iris);
-  transition-property: transform color, background-color, border;
+  transition-property: transform background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -627,6 +627,7 @@ body {
 .overlay-label {
   color: var(--color-cloud);
   text-align: center;
+  margin: 40px 32px 0 32px;
 }
 
 .product-iteam:hover .overlay {
