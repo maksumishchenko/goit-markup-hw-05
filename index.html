@@ -64,12 +64,14 @@
       <section class="main-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-btn">Order Service</button>
+          <button type="button" data-modal-open class="main-btn">
+            Order Service
+          </button>
         </div>
         <!-- Modal window -->
-        <div class="backdrop">
+        <div class="backdrop" data-modal>
           <div class="modal">
-            <button class="modal-btn" type="button">
+            <button class="modal-btn" type="button" data-modal-close>
               <svg class="modal-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
               </svg>
@@ -531,5 +533,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
