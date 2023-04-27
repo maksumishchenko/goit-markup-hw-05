@@ -284,7 +284,7 @@ body {
   visibility: opacity var(--anim);
 }
 
-. .modal {
+.modal {
   position: absolute;
   top: calc(50% - 292px);
   left: calc(50% - 204px);
@@ -304,8 +304,12 @@ body {
   cursor: pointer;
   background: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
 }
 .modal-icon {
+  display: block;
+  margin: 0 auto;
   color: var(--color-navy-blue);
 }
 
