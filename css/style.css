@@ -281,8 +281,7 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--anim);
-  visibility: opacity var(--anim);
+  transition: opacity var(--anim), visibility var(--anim);
 }
 
 .modal {
@@ -682,8 +681,8 @@ body {
   margin: 40px 32px 0 32px;
 }
 
-.product-iteam:focus .overlay,
-.product-iteam:hover .overlay {
+.product-link:focus .overlay,
+.product-link:hover .overlay {
   transform: translateY(0%);
 }
 
