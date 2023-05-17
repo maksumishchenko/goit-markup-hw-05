@@ -298,12 +298,8 @@ body {
 }
 
 .modal-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -311,7 +307,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
-  padding: 0;
+  margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -333,6 +329,135 @@ body {
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
   fill: var(--color-white);
+}
+
+.modal-title {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+  margin-bottom: 16px;
+}
+
+.modal-div {
+  position: relative;
+}
+
+.label-text {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  color: var(--color-navy-blue);
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  transition: var(--anim);
+}
+
+.modal-input:focus,
+.modal-input:hover,
+.comment-input:focus,
+.comment-input:hover {
+  outline-color: var(--color-iris);
+}
+
+.modal-svg {
+  fill: var(--color-navy-blue);
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transition: var(--anim);
+
+  transform: translateY(-50%);
+}
+
+.modal-div:focus .modal-svg,
+.modal-div:hover .modal-svg {
+  fill: var(--color-iris);
+}
+
+.comment-input {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  color: var(--color-navy-blue);
+  resize: none;
+  padding: 6px 8px;
+}
+
+.comment-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-navy-blue);
+}
+
+.modal-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 466px;
+  left: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z' fill='%23F4F4FD'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0;
+}
+
+.modal-checkbox:checked {
+  transition: var(--anim);
+  background-color: var(--color-ocean);
+  background-size: 10px;
+}
+
+.agree-text {
+  display: block;
+  padding-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.privat-link:visited {
+  color: var(--color-iris);
+}
+
+.modal-submit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  border: none;
+  background: var(--color-iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .feature-svg {
@@ -541,7 +666,6 @@ body {
 }
 
 /* FOOTER */
-
 .footer-div {
   display: flex;
   align-items: baseline;
@@ -555,7 +679,9 @@ body {
   height: 100%;
   background-color: var(--color-iris);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:hover,
@@ -619,6 +745,62 @@ body {
   border-radius: 50%;
 }
 
+.fotter-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
+  margin-left: 88px;
+}
+
+.footer-email {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: var(--color-navy-blue);
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-left: 88px;
+  color: var(--color-white);
+  transform: var(--anim);
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.footer-email:hover,
+.footer-email:focus {
+  outline-color: var(--color-iris);
+}
+
+.footer-email::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.footer-btn {
+  position: relative;
+  width: 165px;
+  height: 40px;
+  background-color: var(--color-iris);
+  border: none;
+  border-radius: 4px;
+  margin-left: 24px;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: var(--anim);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--color-ocean);
+}
+
 .social-icon {
   fill: var(--color-cloud);
 }
@@ -628,6 +810,23 @@ body {
   line-height: 1.5;
   color: var(--color-cloud);
   max-width: 264px;
+}
+
+.footer-telegram-icon {
+  position: absolute;
+  left: 78%;
+  bottom: 0;
+  fill: var(--color-white);
+
+  transform: translateY(-50%);
+}
+
+.footer-bnt-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
 }
 
 .secondary-btn {
@@ -695,24 +894,12 @@ body {
 
 .overlay-label {
   color: var(--color-cloud);
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
-  padding: 40px 32px;
-  background-color: var(--color-iris);
-  height: 100%;
-  width: 100%;
-  transform: translateY(100%);
-  transition: var(--anim);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 40px 32px 0 32px;
 }
 
-.product-link:focus .overlay-label,
-.product-link:hover .overlay-label {
+.product-link:focus .overlay,
+.product-link:hover .overlay {
   transform: translateY(0%);
 }
 
