@@ -298,16 +298,20 @@ body {
 }
 
 .modal-btn {
-  display: block;
-  margin-left: auto;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   border-radius: 50%;
-  border: none;
   cursor: pointer;
   background: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
-  margin-bottom: 24px;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -340,6 +344,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -415,7 +420,7 @@ body {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 466px;
+  top: 490px;
   left: 24px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -679,9 +684,7 @@ body {
   height: 100%;
   background-color: var(--color-iris);
   border-radius: 50%;
-  transition-property: background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:hover,
