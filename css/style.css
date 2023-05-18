@@ -814,14 +814,17 @@ body {
 
 .footer-telegram-icon {
   position: absolute;
-  left: 78%;
-  bottom: 0;
+  right: 24px;
+  bottom: 0px;
   fill: var(--color-white);
 
   transform: translateY(-50%);
 }
 
 .footer-bnt-text {
+  position: absolute;
+  left: 24px;
+  bottom: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
