@@ -379,10 +379,6 @@ body {
   border-color: var(--color-iris);
 }
 
-.modal-div-input {
-  position: relative;
-}
-
 .modal-svg {
   fill: var(--color-navy-blue);
   position: absolute;
@@ -393,12 +389,13 @@ body {
   transform: translateY(-50%);
 }
 
-.comment-div {
-  margin-bottom: 16px;
+.modal-input:focus .modal-svg,
+.modal-input:hover .modal-svg {
+  fill: var(--color-iris);
 }
 
-.modal-input:focus .modal-svg {
-  fill: var(--color-iris);
+.comment-div {
+  margin-bottom: 16px;
 }
 
 .comment-input {
