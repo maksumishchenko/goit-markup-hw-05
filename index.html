@@ -592,12 +592,12 @@
             </div>
 
             <div class="modal-div-input">
-              <label for="email" class="label-text">Email</label>
+              <label for="user-email" class="label-text">Email</label>
               <input
                 class="modal-input"
                 type="email"
-                id="email"
-                name="user_email"
+                id="user-email"
+                name="user-email"
                 required
                 minlength="8"
               />
@@ -606,22 +606,30 @@
               </svg>
             </div>
 
-            <label for="comment" class="label-text">Comment</label>
-            <textarea
-              class="comment-input"
-              name="user_comment"
-              id="comment"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
+            <div class="comment-div">
+              <label for="user-comment" class="label-text">Comment</label>
+              <textarea
+                class="comment-input"
+                name="user-comment"
+                id="user-comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </div>
 
-            <label class="checkbox-label" for="check">
-              <input class="modal-checkbox" type="checkbox" id="check" />
-              <span class="label-text agree-text"
-                >I accept the terms and conditions of the
-                <a class="privat-link" href="">Privacy Policy</a></span
-              >
-            </label>
+            
+                <div class="checkbox-div"></div>
+                <input class="modal-checkbox visually-hidden" type="checkbox" value="true"
+                 name="user-privacy" id="user-privacy" />
+                 <label for="user-privacy"  class="checkbox-label" for="check">>I accept the terms and conditions of the
+                  </label>
+                <span class="label-text agree-text">
+                  <a class="privat-link" href="">Privacy Policy</a>
+                </span>
+                 
+                >
+              </label>
+            </div>
             <button class="modal-submit-btn" type="submit">Send</button>
           </div>
         </form>
