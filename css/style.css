@@ -353,17 +353,6 @@ body {
 
 .label-text {
   display: block;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--color-light-slate);
-  width: 16px;
-  height: 16px;
-  border: 1px solid #2e2f42;
-  border-radius: 2px;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
   margin-bottom: 4px;
 }
 
@@ -454,7 +443,14 @@ body {
 }
 
 .agree-text {
-  display: block;
+  border: 1px solid #2e2f42;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .checkbox-label {
