@@ -440,15 +440,16 @@ body {
   margin-bottom: 24px;
 }
 
-.privat-link:visited {
+.privat-link {
   color: var(--color-iris);
 }
 
 .modal-submit-btn {
   display: block;
   margin: 0 auto;
+  letter-spacing: 0.04em;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   background: var(--color-iris);
@@ -459,6 +460,7 @@ body {
   line-height: 1.5;
   color: var(--color-white);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-svg {
