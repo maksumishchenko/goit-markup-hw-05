@@ -440,6 +440,13 @@ body {
   margin-bottom: 24px;
 }
 
+.checkbox-:checked .agree-text {
+  background-color: var(--color-ocean);
+  border: none;
+  fill: var(--color-white);
+  border-color: var(--color-ocean);
+}
+
 .privat-link {
   color: var(--color-iris);
 }
