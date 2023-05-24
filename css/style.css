@@ -347,6 +347,7 @@ body {
 }
 
 .modal-div {
+  position: relative;
   margin-bottom: 8px;
 }
 
@@ -360,7 +361,6 @@ body {
   height: 16px;
   border: 1px solid #2e2f42;
   border-radius: 2px;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -404,8 +404,8 @@ body {
   margin-bottom: 16px;
 }
 
-.modal-div:focus .modal-svg,
-.modal-div:hover .modal-svg {
+.modal-input .modal-svg,
+.modal-input .modal-svg {
   fill: var(--color-iris);
 }
 
