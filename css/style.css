@@ -372,13 +372,6 @@ body {
   color: var(--color-navy-blue);
 }
 
-.modal-input:focus,
-.modal-input:hover,
-.comment-input:focus,
-.comment-input:hover {
-  border-color: var(--color-iris);
-}
-
 .modal-svg {
   fill: var(--color-navy-blue);
   position: absolute;
@@ -389,8 +382,13 @@ body {
   transform: translateY(-50%);
 }
 
+.modal-input:focus,
+.modal-input:hover,
 .modal-input:focus .modal-svg,
-.modal-input:hover .modal-svg {
+.modal-input:hover .modal-svg,
+.comment-input:focus,
+.comment-input:hover {
+  border-color: var(--color-iris);
   fill: var(--color-iris);
 }
 
@@ -840,8 +838,6 @@ body {
 .footer-telegram-icon {
   margin-left: 16px;
   fill: var(--color-white);
-
-  transform: translateY(-50%);
 }
 
 .footer-bnt-text {
