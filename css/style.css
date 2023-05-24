@@ -404,8 +404,7 @@ body {
   margin-bottom: 16px;
 }
 
-.modal-input .modal-svg,
-.modal-input .modal-svg {
+.modal-input:focus .modal-svg {
   fill: var(--color-iris);
 }
 
