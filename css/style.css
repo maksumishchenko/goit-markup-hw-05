@@ -447,7 +447,7 @@ body {
   margin-bottom: 24px;
 }
 
-.checkbox-input:checked .privasy-icon {
+.checkbox-input:checked + .agree-text .privasy-icon {
   background-color: var(--color-ocean);
   border: none;
   fill: var(--color-white);
