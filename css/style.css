@@ -384,8 +384,8 @@ body {
 
 .modal-input:focus,
 .modal-input:hover,
-.modal-input:focus .modal-svg,
-.modal-input:hover .modal-svg,
+.modal-div:focus .modal-svg,
+.modal-div:hover .modal-svg,
 .comment-input:focus,
 .comment-input:hover {
   border-color: var(--color-iris);
